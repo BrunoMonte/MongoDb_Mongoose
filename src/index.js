@@ -25,7 +25,8 @@ link.save().then(doc => {
 
 mongoose.connect('mongodb://localhost/links', {
     useNewUrlParser: true,
-    userUnifiedTopology: true
+    userUnifiedTopology: true,
+    userMongoClient: true
 })
 
 let db = mongoose.connection
